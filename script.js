@@ -52,7 +52,7 @@
       centeredSlides: false,
       slidesPerView: 1.08,
       spaceBetween: 14,
-      loopAdditionalSlides: 2,
+      loopAdditionalSlides: 4,
       autoplay: {
         delay: 2600,
         disableOnInteraction: false
@@ -67,15 +67,15 @@
       },
       breakpoints: {
         620: {
-          slidesPerView: 2.05,
+          slidesPerView: 2.2,
           spaceBetween: 16
         },
         860: {
-          slidesPerView: 2.65,
+          slidesPerView: 3.25,
           spaceBetween: 18
         },
         1120: {
-          slidesPerView: 3.25,
+          slidesPerView: 4.15,
           spaceBetween: 20
         }
       }

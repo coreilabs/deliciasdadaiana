@@ -28,9 +28,8 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://images.pexels.com">
-    <link rel="preconnect" href="https://img.magnific.com">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preload" as="image" href="assets/images/hero-buffet-massas.jpg" fetchpriority="high">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800;900&family=Pacifico&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -150,7 +149,7 @@
     <main id="conteudo">
       <section class="hero section-panel" id="inicio" aria-labelledby="hero-title">
         <div class="hero-media" data-parallax>
-          <img src="https://images.pexels.com/photos/6287490/pexels-photo-6287490.jpeg?auto=compress&cs=tinysrgb&w=1800" alt="" fetchpriority="high">
+          <img src="assets/images/hero-buffet-massas.jpg" width="1200" height="1800" alt="" fetchpriority="high">
         </div>
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="container hero-grid">
@@ -171,7 +170,8 @@
           </div>
 
           <aside class="hero-badge reveal" aria-label="Destaque do serviço">
-            <span>Buffet de</span>
+            <span class="badge-heart"><i data-lucide="heart" aria-hidden="true"></i></span>
+            <span class="badge-eyebrow">Buffet de</span>
             <strong>Macarrão</strong>
             <em>ao vivo</em>
             <b>Um show de sabor!</b>
@@ -197,59 +197,83 @@
             <div class="swiper flavor-carousel" aria-label="Galeria de produtos Delícias da Daiana">
               <div class="swiper-wrapper">
                 <article class="swiper-slide flavor-slide">
-                  <img src="https://images.pexels.com/photos/2291367/pexels-photo-2291367.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Cubas de buffet com comidas variadas prontas para servir" loading="lazy">
+                  <img src="assets/images/slider-macarrao-ao-vivo.jfif" width="960" height="640" alt="Buffet de macarrão ao vivo com massas, molhos e ingredientes para escolher" loading="lazy">
                   <div class="slide-copy">
-                    <span>Eventos</span>
-                    <h3>Cubas bem servidas</h3>
-                    <p>Comida quente, organizada e pronta para atender seus convidados.</p>
+                    <span>Macarrão ao vivo</span>
+                    <h3>Mesa pronta para servir</h3>
+                    <p>Massas, molhos e acompanhamentos montados com capricho.</p>
                   </div>
                 </article>
                 <article class="swiper-slide flavor-slide">
-                  <img src="https://images.pexels.com/photos/18749077/pexels-photo-18749077.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Linha de buffet com cubas de comida em evento" loading="lazy">
+                  <img src="assets/images/slider-ingredientes-macarrao.jfif" width="800" height="533" alt="Ingredientes variados para buffet de macarrão ao vivo" loading="lazy">
                   <div class="slide-copy">
-                    <span>Buffet</span>
-                    <h3>Mesa completa</h3>
+                    <span>Ingredientes</span>
+                    <h3>Combinações à vontade</h3>
+                    <p>Opções coloridas para cada convidado montar o prato do seu jeito.</p>
+                  </div>
+                </article>
+                <article class="swiper-slide flavor-slide">
+                  <img src="assets/images/slider-buffet-pratos.jfif" width="800" height="450" alt="Mesa de buffet com pratos, saladas, massas e molhos" loading="lazy">
+                  <div class="slide-copy">
+                    <span>Eventos</span>
+                    <h3>Buffet organizado</h3>
                     <p>Estrutura bonita para almoço, festa e confraternização.</p>
                   </div>
                 </article>
                 <article class="swiper-slide flavor-slide">
-                  <img src="https://img.magnific.com/premium-photo/marmita-brazilian-food-served-styrofoam-pots-lunch-cheap-meal-rice-with-beans-sausage-chicken-thigh-salad-typical-brazilian-meal-isolated-white-background_72932-6783.jpg" alt="Marmitex de isopor com arroz, feijão, frango, salada e acompanhamentos brasileiros" loading="lazy">
+                  <img src="assets/images/slider-molhos-massas.jfif" width="500" height="450" alt="Massas, molhos e acompanhamentos em panelas e cubas de buffet" loading="lazy">
+                  <div class="slide-copy">
+                    <span>Cubas</span>
+                    <h3>Comida quente</h3>
+                    <p>Molhos e acompanhamentos servidos no ponto certo.</p>
+                  </div>
+                </article>
+                <article class="swiper-slide flavor-slide">
+                  <img src="assets/images/slider-buffet-salao.jfif" width="654" height="436" alt="Buffet montado com pratos, molhos, saladas e acompanhamentos" loading="lazy">
+                  <div class="slide-copy">
+                    <span>Salão</span>
+                    <h3>Mesa completa</h3>
+                    <p>Apresentação acolhedora para receber bem seus convidados.</p>
+                  </div>
+                </article>
+                <article class="swiper-slide flavor-slide">
+                  <img src="assets/images/slider-marmitex-brasileiro.jfif" width="1200" height="750" alt="Marmitex com arroz, salada, legumes, proteína e macarrão" loading="lazy">
                   <div class="slide-copy">
                     <span>Marmitex</span>
-                    <h3>Comida brasileira</h3>
-                    <p>Arroz, feijão, proteína e guarnições em porções caprichadas.</p>
+                    <h3>Refeição completa</h3>
+                    <p>Porções equilibradas para quem quer praticidade e sabor.</p>
                   </div>
                 </article>
                 <article class="swiper-slide flavor-slide">
-                  <img src="https://img.magnific.com/premium-photo/brazilian-food-delivered-home-called-marmitex-rice-beans-500-ml-lunch-box_72932-3444.jpg" alt="Marmitex com arroz e feijão em embalagem individual" loading="lazy">
+                  <img src="assets/images/slider-mesa-evento.jfif" width="774" height="1032" alt="Mesa de evento com buffet brasileiro, saladas e pratos servidos" loading="lazy">
                   <div class="slide-copy">
-                    <span>Almoço</span>
-                    <h3>Marmita do dia</h3>
-                    <p>Refeições práticas para quem quer comer bem sem perder tempo.</p>
+                    <span>Buffet</span>
+                    <h3>Comida para eventos</h3>
+                    <p>Opções bem servidas para aniversários, encontros e confraternizações.</p>
                   </div>
                 </article>
                 <article class="swiper-slide flavor-slide">
-                  <img src="https://images.pexels.com/photos/18315986/pexels-photo-18315986.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Prato de espaguete com molho de tomate servido em restaurante" loading="lazy">
+                  <img src="assets/images/slider-buffet-pratos.jfif" width="800" height="450" alt="Buffet brasileiro com pratos, saladas e acompanhamentos para evento" loading="lazy">
                   <div class="slide-copy">
-                    <span>Macarrão</span>
-                    <h3>No ponto certo</h3>
-                    <p>Massas com molho saboroso e finalização feita com cuidado.</p>
+                    <span>Recepção</span>
+                    <h3>Pronto para receber</h3>
+                    <p>Mesas montadas para deixar o serviço fluido e bonito.</p>
                   </div>
                 </article>
                 <article class="swiper-slide flavor-slide">
-                  <img src="https://images.pexels.com/photos/21294883/pexels-photo-21294883.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Prato de massa servido em mesa de restaurante" loading="lazy">
-                  <div class="slide-copy">
-                    <span>Restaurante</span>
-                    <h3>Apresentação bonita</h3>
-                    <p>Visual apetitoso para valorizar cada prato servido.</p>
-                  </div>
-                </article>
-                <article class="swiper-slide flavor-slide">
-                  <img src="https://images.pexels.com/photos/10663691/pexels-photo-10663691.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Massas variadas em bandejas de buffet" loading="lazy">
+                  <img src="assets/images/slider-molhos-massas.jfif" width="500" height="450" alt="Massas e molhos em cubas e panelas para buffet de macarrão" loading="lazy">
                   <div class="slide-copy">
                     <span>Massas</span>
-                    <h3>Variedade na mesa</h3>
-                    <p>Combinações de massas, molhos e acompanhamentos para todos os gostos.</p>
+                    <h3>Molhos cheios de sabor</h3>
+                    <p>Combinações quentes para servir com aroma de comida feita na hora.</p>
+                  </div>
+                </article>
+                <article class="swiper-slide flavor-slide">
+                  <img src="assets/images/slider-ingredientes-macarrao.jfif" width="800" height="533" alt="Mesa de ingredientes variados para macarrão ao vivo" loading="lazy">
+                  <div class="slide-copy">
+                    <span>Ao vivo</span>
+                    <h3>Escolhas na hora</h3>
+                    <p>Ingredientes variados ajudam cada convidado a criar seu prato favorito.</p>
                   </div>
                 </article>
               </div>
@@ -303,7 +327,7 @@
 
       <section class="experience-section section-panel" aria-labelledby="experiencia-title">
         <div class="experience-media" data-parallax>
-          <img src="https://images.pexels.com/photos/5908187/pexels-photo-5908187.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" loading="lazy">
+          <img src="assets/images/slider-buffet-salao.jfif" width="654" height="436" alt="" loading="lazy">
         </div>
         <div class="container experience-grid">
           <div class="experience-copy reveal">
@@ -361,28 +385,35 @@
 
       <section class="quote-section section-panel" id="orcamento" aria-labelledby="orcamento-title">
         <div class="container quote-grid">
-          <div class="quote-copy reveal">
-            <span class="script-line">Fale comigo!</span>
-            <h2 id="orcamento-title">Delícias que fazem do seu evento um momento inesquecível.</h2>
-            <p>Escolha o tipo de pedido e fale direto pelo WhatsApp com uma mensagem pronta para começar o orçamento.</p>
+          <div class="quote-brand reveal">
+            <img class="quote-logo" src="assets/images/logo-branco-vertical.png" alt="Delícias da Daiana" width="1080" height="1080" loading="lazy">
+            <div class="quote-copy">
+              <span class="script-line">Fale com a Daiana</span>
+              <h2 id="orcamento-title">Delícias que fazem do seu evento um momento inesquecível.</h2>
+              <p>Envie uma mensagem pelo WhatsApp e receba uma proposta pensada para a sua data, quantidade de convidados e estilo de serviço.</p>
+            </div>
+          </div>
+
+          <div class="quote-action reveal">
+            <span class="quote-mini-label">Atendimento direto</span>
+            <a class="phone-link quote-phone" href="tel:+5562984791201">
+              <i data-lucide="phone" aria-hidden="true"></i>
+              (62) 98479-1201
+            </a>
             <div class="budget-options" role="group" aria-label="Tipo de orçamento">
               <button class="budget-chip is-active" type="button" data-budget="evento">Evento</button>
               <button class="budget-chip" type="button" data-budget="marmitex">Marmitex</button>
               <button class="budget-chip" type="button" data-budget="macarrao">Macarrão ao vivo</button>
             </div>
-          </div>
-
-          <div class="contact-panel reveal">
-            <img src="assets/images/logo-horizontal.png" alt="Delícias da Daiana" width="929" height="442" loading="lazy">
-            <a class="phone-link" href="tel:+5562984791201">
-              <i data-lucide="phone" aria-hidden="true"></i>
-              (62) 98479-1201
-            </a>
             <a class="button button-primary button-wide" data-whatsapp-link href="https://wa.me/5562984791201?text=Ol%C3%A1%2C%20Del%C3%ADcias%20da%20Daiana%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20meu%20evento." target="_blank" rel="noopener">
               <i data-lucide="message-circle" aria-hidden="true"></i>
-              Chamar no WhatsApp
+              Enviar pedido no WhatsApp
             </a>
-            <p class="contact-note">Atendimento para orçamento de eventos, marmitex e buffet de macarrão ao vivo.</p>
+            <div class="quote-benefits" aria-label="Informações para orçamento">
+              <span><i data-lucide="calendar-check" aria-hidden="true"></i>Data do evento</span>
+              <span><i data-lucide="users" aria-hidden="true"></i>Quantidade de pessoas</span>
+              <span><i data-lucide="utensils" aria-hidden="true"></i>Serviço desejado</span>
+            </div>
           </div>
         </div>
       </section>

@@ -1,8 +1,8 @@
 (function () {
   const whatsappMessages = {
-    evento: "Olá, Delícias da Daiana! Gostaria de solicitar um orçamento para meu evento.",
-    marmitex: "Olá, Delícias da Daiana! Quero informações sobre marmitex.",
-    macarrao: "Olá, Delícias da Daiana! Gostaria de orçar buffet de macarrão ao vivo."
+    evento: "Olá Daiana! Gostaria de solicitar um orçamento para meu evento.",
+    marmitex: "Olá Daiana! Quero informações sobre marmitex.",
+    macarrao: "Olá Daiana! Gostaria de orçar buffet de macarrão ao vivo."
   };
 
   const phone = "5562984791201";

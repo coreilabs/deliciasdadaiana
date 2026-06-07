@@ -1,0 +1,16 @@
+{
+  "name": "Delícias da Daiana",
+  "short_name": "Delícias",
+  "description": "Buffet de macarrão ao vivo, marmitex e comida para eventos.",
+  "start_url": "http://coreilabs.github.io/deliciasdadaiana/",
+  "display": "standalone",
+  "background_color": "#fff3e4",
+  "theme_color": "#e94322",
+  "icons": [
+    {
+      "src": "assets/icons/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}

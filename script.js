@@ -46,15 +46,15 @@
     if (!window.Swiper) return;
 
     new window.Swiper(".flavor-carousel", {
-      loop: false,
-      rewind: true,
-      speed: 650,
+      loop: true,
+      speed: 620,
       grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 1,
-      spaceBetween: 16,
+      centeredSlides: false,
+      slidesPerView: 1.08,
+      spaceBetween: 14,
+      loopAdditionalSlides: 2,
       autoplay: {
-        delay: 4300,
+        delay: 2600,
         disableOnInteraction: false
       },
       pagination: {
@@ -66,13 +66,17 @@
         prevEl: ".swiper-button-prev-custom"
       },
       breakpoints: {
+        620: {
+          slidesPerView: 2.05,
+          spaceBetween: 16
+        },
         860: {
-          slidesPerView: 1.18,
-          spaceBetween: 22
+          slidesPerView: 2.65,
+          spaceBetween: 18
         },
         1120: {
-          slidesPerView: 1.32,
-          spaceBetween: 28
+          slidesPerView: 3.25,
+          spaceBetween: 20
         }
       }
     });

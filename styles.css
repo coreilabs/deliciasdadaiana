@@ -881,28 +881,45 @@ button {
 }
 
 .qualities-section {
-  padding: 78px 0;
+  padding: 56px 0 60px;
   background:
-    linear-gradient(180deg, #fffaf2, #fff0dc);
+    radial-gradient(circle at 10% 18%, rgba(255, 255, 255, 0.3), transparent 28%),
+    linear-gradient(135deg, #fff4e5 0%, #ffd9bd 52%, #f05a2f 100%);
+  overflow: hidden;
+}
+
+.qualities-section::after {
+  position: absolute;
+  inset: auto -8% -46px;
+  z-index: -1;
+  height: 120px;
+  content: "";
+  background: rgba(82, 29, 12, 0.18);
+  clip-path: polygon(0 50%, 100% 6%, 100% 100%, 0 100%);
+}
+
+.qualities-section .section-heading {
+  max-width: 760px;
+  margin-bottom: 20px;
 }
 
 .quality-grid {
   display: grid;
-  gap: 14px;
+  gap: 12px;
 }
 
 .quality-card {
-  min-height: 190px;
+  min-height: 150px;
   display: grid;
   place-items: center;
-  gap: 14px;
-  padding: 24px;
+  gap: 10px;
+  padding: 20px 18px;
   text-align: center;
   color: var(--tomato);
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(233, 67, 34, 0.18);
+  background: rgba(255, 250, 242, 0.84);
+  border: 1px solid rgba(255, 255, 255, 0.52);
   border-radius: 8px;
-  box-shadow: 0 14px 34px rgba(77, 23, 7, 0.08);
+  box-shadow: 0 14px 32px rgba(77, 23, 7, 0.1);
 }
 
 .quality-card h3 {
@@ -1257,6 +1274,11 @@ button {
   .section-heading {
     grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.55fr);
     align-items: end;
+  }
+
+  .qualities-section .section-heading {
+    grid-template-columns: 1fr;
+    max-width: 820px;
   }
 
   .service-grid {
